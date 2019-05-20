@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Tutorial</title>
+<script type="text/javascript">
+//  alert("hello.!");
+</script>  
+</head>
+<body>
+
+
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='s2.jpg'">shrink</button>
+
+<img id="myImage" src="s1.jpg" style="width:400px">
+
+<button onclick="document.getElementById('myImage').src='s1.jpg'">extract</button>
+
+
+
+
+
+
+<h2>JavaScript Comparisons</h2>
+
+<p>Input your age and click the button:</p>
+
+<input id="age" value="18" />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var age, voteable;
+  age = Number(document.getElementById("age").value);
+  if (isNaN(age)) {
+    voteable = "Input is not a number";
+  } else {
+    voteable = (age < 18) ? "Too young " : "Old enough ";
+  }
+  document.getElementById("demo").innerHTML = voteable + "to vote!";
+}
+</script>
+
+<h1>try</h1>
+<input type="" value="18"   id="comer"/>
+<button onclick="loss()">do</button>
+<p id="dem3"></p>
+<script type="text/javascript">
+function loss(){
+  var pop,comer;
+  comer =Number(document.getElementById("comer").value);
+  if (isNaN(comer)) {
+    pop=alert("enter a number value and try again");
+  } else {
+    pop=(comer<18)? "not a major" : "major person";
+  }
+document.getElementById("dem3").innerHTML = pop;
+}
+</script>
+
+
+
+
+<hr>
+
+
+
+
+
+<p id="demo2"></p>
+
+<script>
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("demo2").innerHTML = "Happy " + day+" !";
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

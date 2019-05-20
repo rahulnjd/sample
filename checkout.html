@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    
+    <title>GAC Ooty</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+<style type="text/css">
+sidenav {
+	position: fixed;  
+  	display: none;
+  	height: 100%;
+}
+</style>
+</head>
+<body>
+
+<div id="sidenav" style="background-color: red;width: 200px;">
+<button onclick="closenav()">close</button>
+<ul>
+	<li>page 1</li>
+	<li>page 2</li>
+	<li>page 3</li>
+	<li>page 4</li>
+	<li>page 5</li>
+
+</ul>
+	
+</div>
+<button onclick="opennav()">open</button>
+
+<script type="text/javascript">
+	function opennav() {
+    document.getElementById("sidenav").style.display = 'block';
+    
+}
+
+function closenav() {
+    document.getElementById("sidenav").style.display = "none";
+    
+}
+</script>
+<!-- dispaly block-->
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can show hidden HTML elements.</p>
+
+
+
+
+
+<p id="demo" style="display:none; background-color: red;">Hello JavaScript! </p>	
+
+
+
+<button type="button" onclick="document.getElementById('demo').style.display='block'">show!</button>
+
+<!-- display none-->
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo1" style="background-color: skyblue;">JavaScript can hide HTML elements.</p>
+
+<button type="button" onclick="document.getElementById('demo1').style.display='none'">hide!</button>
+
+
+
+
+
+
+<p>Input your age and click the button:</p>
+
+<input id="age" value="18" />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var age, voteable;
+  age = document.getElementById("age").value;
+  voteable = (age < 18) ? "Too young":"Old enough";
+  document.getElementById("demo").innerHTML = voteable + " to vote.";
+}
+</script>
+
+
+<p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p><p>pop<br></p>
+
+    <script src="js/jquery.min.js"></script>
+
+    
+
+    <script type="text/javascript" src="js/bootstrap.min.js" ></script>
+</body>
+</html>
